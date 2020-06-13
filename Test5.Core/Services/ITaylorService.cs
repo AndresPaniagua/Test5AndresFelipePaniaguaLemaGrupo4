@@ -3,5 +3,7 @@
     public interface ITaylorService
     {
         double Calculate(double N, double X);
+
+        double Factorial(double n);
     }
 }

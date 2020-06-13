@@ -1,10 +1,29 @@
-﻿namespace Test5.Core.Services
+﻿using System;
+
+namespace Test5.Core.Services
 {
     public class TaylorService : ITaylorService
     {
         public double Calculate(double N, double X)
         {
-            return 0;
+            double t;
+            double s = 0;
+            for (int i = 0; i < N; i++)
+            {
+                t = Math.Pow(X, i) / Factorial(i);
+                s += t;
+            }
+            return s;
+        }
+
+        public double Factorial(double n)
+        {
+            if (n <= 1)
+            {
+                return 1;
+            }
+
+            return n * Factorial(n - 1);
         }
 
     }

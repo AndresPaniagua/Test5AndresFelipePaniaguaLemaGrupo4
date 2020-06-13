@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:gravity="right"
         android:textSize="24dp"
         local:MvxBind="Text N" />
 
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:gravity="right"
         android:textSize="24dp"
         local:MvxBind="Text X" />
 
