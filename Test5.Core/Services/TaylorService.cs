@@ -6,14 +6,14 @@ namespace Test5.Core.Services
     {
         public double Calculate(double N, double X)
         {
-            double t;
-            double s = 0;
+            double taylor;
+            double sum = 0;
             for (int i = 0; i < N; i++)
             {
-                t = Math.Pow(X, i) / Factorial(i);
-                s += t;
+                taylor = Math.Pow(X, i) / Factorial(i);
+                sum += taylor;
             }
-            return s;
+            return sum;
         }
 
         public double Factorial(double n)
